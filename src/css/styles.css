@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.container {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.container-left {
+  flex: 1;
+  height: 100%;
+  padding: 60px 90px;
+}
+
+.container-right {
+  width: 600px;
+  height: 100%;
+  background-image: url("../images/cover-form.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    height: fit-content;
+  }
+  .container-left {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    flex: initial;
+  }
+  .container-right {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container-left {
+    padding: 20px;
+  }
+}
+.head {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.head-title {
+  font-weight: 500;
+  font-size: 32px;
+  color: #333333;
+}
+
+.head-description {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #666666;
+}
+
+.head-link {
+  color: #333333;
+}
+
+@media screen and (max-width: 420px) {
+  .head-title {
+    font-size: 24px;
+  }
+}
+.form-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form-input-group + .form-input-group {
+  margin-top: 32px;
+}
+
+.form-label {
+  font-size: 16px;
+  color: #666;
+}
+
+.form-input {
+  padding: 10px;
+  height: 56px;
+  border-radius: 12px;
+  border: 1px solid rgba(102, 102, 102, 0.35);
+}
+
+.form-term-group {
+  margin-top: 32px;
+}
+
+.form-checkbox {
+  accent-color: #333;
+}
+
+.form-term-checkbox .form-label {
+  color: #333;
+}
+
+.form-term-description {
+  margin-top: 32px;
+  color: #666;
+}
+
+.form-term-link {
+  color: #333;
+}
+
+.form-submit {
+  margin-top: 32px;
+  display: block;
+  width: fit-content;
+  padding: 16px 32px;
+  border: 0;
+  border-radius: 32px;
+  font-size: 22px;
+  color: #fff;
+  background-color: #666;
+}
+
+.form-login-description {
+  margin-top: 16px;
+  color: #666;
+}
+
+.form-login-link {
+  color: #333;
+}
+
+@media screen and (max-width: 420px) {
+  .form-submit {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

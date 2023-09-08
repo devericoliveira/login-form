@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="./src/css/styles.css" />
+</head>
+<body>
+   <main class="container">
+    <section class="container-left">
+     <header class="head">
+      <h1 class="head-title">Welcome to design community</h1>
+      <p class="head-description">
+        Already have an account? 
+        <a class="head-link" href="#">Log in</a>
+      </p>
+     </header>
+
+     <form class="form">
+      <div class="form-input-group">
+        <label class="form-label" for="email">Email</label>
+        <input class="form-input" id="email" type="text" required />
+      </div>
+      
+      <div class="form-input-group">
+        <label class="form-label" for="username">Username</label>
+        <input class="form-input" id="username" type="text" required />
+      </div>
+      
+      <div class="form-input-group">
+        <div class="flex between">
+          <label class="form-label" for="password">Password</label>
+          <span>Hide</span>
+        </div>
+        <input class="form-input" id="password" type="password" required />
+      </div>
+
+      <div class="form-term-group">
+        <div class="form-term-checkbox">
+          <input class="form-checkbox" id="checkbox" type="checkbox">
+          <label class="form-label" for="checkbox">
+            I want to receive emails about the product, feature updates, events, and marketing promotions.
+          </label>
+        </div>
+
+        <p class="form-term-description">
+          By creating an account, you agree to the 
+          <a class="form-term-link" href="#">Terms of use</a>
+          and
+          <a class="form-term-link" href="#">Privacy policy.</a>
+        </p>
+      </div>
+
+      <button class="form-submit">
+        Create an account
+      </button>
+      
+      <p class="form-login-description">
+        Already have an account? 
+        <a class="form-login-link" href="#">Log in</a>
+      </p>
+     </form>
+    </section>
+    <div class="container-right"></div>
+   </main>
+</body>
+</html>
